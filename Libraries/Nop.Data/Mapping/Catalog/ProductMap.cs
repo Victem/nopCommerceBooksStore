@@ -41,6 +41,8 @@ namespace Nop.Data.Mapping.Catalog
             this.HasMany(p => p.ProductTags)
                 .WithMany(pt => pt.Products)
                 .Map(m => m.ToTable("Product_ProductTag_Mapping"));
+
+            this.Property(p=> p.Author);
         }
     }
 }

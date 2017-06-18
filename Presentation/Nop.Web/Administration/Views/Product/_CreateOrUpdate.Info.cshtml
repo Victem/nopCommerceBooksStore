@@ -526,6 +526,15 @@
                                 @Html.ValidationMessageFor(model => model.Locales[item].Name)
                             </div>
                         </div>
+                         <div class="form-group">
+                             <div class="col-md-3">
+                                 @Html.NopLabelFor(model => model.Locales[item].Author)
+                             </div>
+                             <div class="col-md-9">
+                                 @Html.NopEditorFor(model => model.Locales[item].Author)
+                                 @Html.ValidationMessageFor(model => model.Locales[item].Author)
+                             </div>
+                         </div>
                         <div class="form-group">
                             <div class="col-md-3">
                                 @Html.NopLabelFor(model => model.Locales[item].ShortDescription)
@@ -554,6 +563,15 @@
                             <div class="col-md-9">
                                 @Html.NopEditorFor(model => model.Name, required: true)
                                 @Html.ValidationMessageFor(model => model.Name)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.Author)
+                            </div>
+                            <div class="col-md-9">
+                                @Html.NopEditorFor(model => model.Author, required: false)
+                                @Html.ValidationMessageFor(model => model.Author)
                             </div>
                         </div>
                         <div class="form-group">
