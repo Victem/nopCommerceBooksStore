@@ -1,0 +1,11 @@
+﻿@using Nop.Web.Framework;
+@using Nop.Web.Framework.UI;
+@using System.Web.Mvc;
+@{
+    Html.AddCssFileParts(ResourceLocation.Head, "~/Plugins/Widgets.DeliveryDiscount/Content/delivery-discount.css");
+}
+
+@model Nop.Plugin.Widgets.DeliveryDiscount.Models.DeliveryDiscountConfigurationModel
+<div class="delivery-discount-label">
+    @Model.Label
+</div>

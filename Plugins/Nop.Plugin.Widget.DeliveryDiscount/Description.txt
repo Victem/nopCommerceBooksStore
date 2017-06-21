@@ -1,0 +1,9 @@
+﻿Group: Widgets
+FriendlyName: Delivery discount
+SystemName: Widgets.DeliveryDiscount
+Version: 1.0
+SupportedVersions: 3.90
+Author: Andrew Lobov
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.DeliveryDiscount.dll
+Description: Delivery discount plugin

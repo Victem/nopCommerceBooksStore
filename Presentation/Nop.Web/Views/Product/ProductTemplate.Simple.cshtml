@@ -113,7 +113,7 @@
                             @Html.Partial("_ProductPrice", Model.ProductPrice, dataDictPrice)
 
                             @Html.Partial("_ProductTierPrices", Model.TierPrices)
-
+                            @Html.Widget("delivery-discount")
                             var dataDictAddToCart = new ViewDataDictionary();
                             dataDictAddToCart.TemplateInfo.HtmlFieldPrefix = string.Format("addtocart_{0}", Model.Id);
                             @Html.Partial("_AddToCart", Model.AddToCart, dataDictAddToCart)
