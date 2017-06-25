@@ -449,7 +449,7 @@ namespace Nop.Admin.Models.Catalog
         //stock quantity history
         public StockQuantityHistoryModel StockQuantityHistory { get; set; }
 
-        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Name")]
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
         [AllowHtml]
         public string Author { get; set; }
 
